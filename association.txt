@@ -1,0 +1,63 @@
+{
+    "AssociationDescription": {
+        "Name": "AWS-GatherSoftwareInventory",
+        "AssociationVersion": "1",
+        "Date": "2020-04-11T20:10:55.701000+02:00",
+        "LastUpdateAssociationDate": "2020-04-11T20:10:55.701000+02:00",
+        "Overview": {
+            "Status": "Success",
+            "AssociationStatusAggregatedCount": {
+                "Success": 2
+            }
+        },
+        "DocumentVersion": "$DEFAULT",
+        "Parameters": {
+            "applications": [
+                "Enabled"
+            ],
+            "awsComponents": [
+                "Enabled"
+            ],
+            "billingInfo": [
+                "Enabled"
+            ],
+            "customInventory": [
+                "Enabled"
+            ],
+            "files": [
+                ""
+            ],
+            "instanceDetailedInformation": [
+                "Enabled"
+            ],
+            "networkConfig": [
+                "Enabled"
+            ],
+            "services": [
+                "Enabled"
+            ],
+            "windowsRegistry": [
+                ""
+            ],
+            "windowsRoles": [
+                "Enabled"
+            ],
+            "windowsUpdates": [
+                "Enabled"
+            ]
+        },
+        "AssociationId": "3596e9af-ae4e-4a5f-8df1-062cf94a2f77",
+        "Targets": [
+            {
+                "Key": "InstanceIds",
+                "Values": [
+                    "*"
+                ]
+            }
+        ],
+        "ScheduleExpression": "rate(30 minutes)",
+        "LastExecutionDate": "2020-04-12T15:47:53+02:00",
+        "LastSuccessfulExecutionDate": "2020-04-12T15:47:53+02:00",
+        "AssociationName": "Inventory-Association"
+    }
+}
