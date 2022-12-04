@@ -112,7 +112,7 @@ export class Mgt410SSMInventoryResourceDataSyncStack extends cdk.Stack {
         }
     });
 
-    Tag.add(patchBaselineWindows, 'OS', 'AmazonLinux');
+    Tag.add(patchBaselineWindows, 'OS', 'AmazonWindows');
 
     const maintenanceWindow = new ssm.CfnMaintenanceWindow(this, 'MaintenanceWindow', {
         name: 'Patch-Prod-Mon-8pm',
